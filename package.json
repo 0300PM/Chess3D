@@ -1,0 +1,25 @@
+{
+  "name": "chess-3d-cinematic",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "animejs": "^3.2.2",
+    "chess.js": "^1.0.0",
+    "pixi.js": "^8.6.6",
+    "stats.js": "^0.17.0",
+    "three": "^0.167.1"
+  },
+  "devDependencies": {
+    "@types/animejs": "^3.1.13",
+    "@types/stats.js": "^0.17.4",
+    "@types/three": "^0.183.1",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  }
+}

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess 3D — Cinematic</title>
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        background: radial-gradient(1200px 800px at 50% 35%, #141822 0%, #070910 55%, #05060b 100%);
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
+          "Segoe UI Emoji";
+      }
+      #app {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+      canvas {
+        display: block;
+      }
+      .debugOverlay {
+        position: absolute;
+        left: 12px;
+        bottom: 12px;
+        padding: 8px 11px;
+        border-radius: 11px;
+        color: rgba(255, 255, 255, 0.82);
+        background: rgba(10, 12, 18, 0.5);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        font-size: 11px;
+        line-height: 1.4;
+        user-select: none;
+        pointer-events: none;
+        max-width: 420px;
+      }
+      .debugOverlay b {
+        color: rgba(255, 255, 255, 0.95);
+      }
+      .hint {
+        opacity: 0.62;
+        margin-top: 5px;
+      }
+      .statsBadge {
+        position: absolute;
+        left: 14px;
+        bottom: 64px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 5px 10px;
+        border-radius: 10px;
+        color: rgba(255, 255, 255, 0.8);
+        background: rgba(10, 12, 18, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        font: 600 11px ui-sans-serif, system-ui, Segoe UI, Roboto, Helvetica, Arial;
+        backdrop-filter: blur(10px);
+        user-select: none;
+      }
+      .statsBadge canvas {
+        display: block;
+        border-radius: 4px;
+        opacity: 0.85;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
